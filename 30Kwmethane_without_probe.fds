@@ -1,6 +1,6 @@
-&HEAD CHID='30Kwmethane_with_probe'/
+&HEAD CHID='30Kwmethane_without_probe'/
 &TIME T_END=20.0/
-&DUMP RENDER_FILE='30Kwmethane.ge1', COLUMN_DUMP_LIMIT=.TRUE., DT_RESTART=300.0/
+&DUMP RENDER_FILE='30Kwmethane_without_probe', COLUMN_DUMP_LIMIT=.TRUE., DT_RESTART=300.0/
 
 &MESH ID='Mesh02', IJK=50,50,18, XB=-0.25,0.25,-0.25,0.25,0.0,0.18/
 &MESH ID='Mesh05', IJK=50,50,8, XB=-0.25,0.25,-0.25,0.25,0.22,0.32/
@@ -15,6 +15,7 @@
       FYI='AFT NIST Multi-Floor FDS5 Validation',
       FUEL='REAC_FUEL',
       FORMULA='C1H4'/
+
 
 &DEVC ID='GAS_temperature_-3cm', QUANTITY='TEMPERATURE', XYZ=0.0,0.0,0.17/
 &DEVC ID='GAS_temperature_-2cm', QUANTITY='TEMPERATURE', XYZ=0.0,0.0,0.18/
